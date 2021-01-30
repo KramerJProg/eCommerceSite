@@ -23,6 +23,7 @@ namespace eCommerceSite.Models
         /// The retail price as US currency
         /// </summary>
         [DataType(DataType.Currency)]
+        // [Display(Name = "New Name")] Renaming Price
         public double Price { get; set; }
 
         /// <summary>
