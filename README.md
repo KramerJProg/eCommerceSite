@@ -12,26 +12,24 @@ Basic eCommerce site to learn ASP.NET Core MVC Concepts. This is an in-class pro
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)
 
 #### Want To Help Out?
-1. Go to __(https://github.com/KramerJProg/eCommerceSite)__ 
-
-2. Click on the Code button
+1. Click on the Code button
 
 ![Directions](https://user-images.githubusercontent.com/72529822/106406534-6272f780-63ee-11eb-99d2-9a2bdee172e1.png)
 
-3. Click the clipboard icon OR manually copy the link
+2. Click the clipboard icon OR manually copy the link
 
 ![Directions2](https://user-images.githubusercontent.com/72529822/106406055-f217a680-63ec-11eb-9382-a0450a3feed6.png)
 
-4. Open up Visual Studio on your desktop
+3. Open up Visual Studio on your desktop
 
 ![Directions3](https://user-images.githubusercontent.com/72529822/106406669-df9e6c80-63ee-11eb-9a9c-ec378896993e.png)
 
-5. Click Clone a repository
+4. Click Clone a repository
 
 ![Directions4](https://user-images.githubusercontent.com/72529822/106406742-1a080980-63ef-11eb-897d-f5d13600c231.png)
 
-6. Paste the URL you copied from my repo
+5. Paste the URL you copied from my repo
 
 ![Directions5](https://user-images.githubusercontent.com/72529822/106406966-baf6c480-63ef-11eb-89f3-5563e6a317dd.png)
 
-7. Click Clone in the bottom right hand corner of Visual Studio!
+6. Click Clone in the bottom right hand corner of Visual Studio!
