@@ -1,6 +1,14 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+.page-holder{
+    min-height: 100vh;
+}
+
+.bg-cover{
+    background-size: cover !important;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
