@@ -33,3 +33,5 @@ Basic eCommerce site to learn ASP.NET Core MVC Concepts. This is an in-class pro
 ![Directions5](https://user-images.githubusercontent.com/72529822/106406966-baf6c480-63ef-11eb-89f3-5563e6a317dd.png)
 
 6. Click Clone in the bottom right hand corner of Visual Studio!
+
+- If you need further instruction, [Click Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) for official github documentation on how to clone a repository!
