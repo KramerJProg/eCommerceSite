@@ -4,7 +4,7 @@
     ViewData["Title"] = "Edit " + Model.Title;
 }
 
-<h1>Edit @Model.Title</h1>
+<h1 class="text-white">Edit @Model.Title</h1>
 
 @if(ViewData["Message"] != null)
 {
@@ -15,7 +15,7 @@
 
 
 <hr />
-<div class="row">
+<div class="row text-white">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
