@@ -1,9 +1,16 @@
-﻿<!DOCTYPE html>
+﻿
+@inject IHttpContextAccessor sessionData
+@{ 
+    int? userId = sessionData.HttpContext.Session.GetInt32("UserId");
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - eCommerceSite</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -27,14 +34,23 @@
                         <li class="nav-item">
                             <a class="nav-link text-light m-2" asp-controller="Product" asp-action="Index">Catalog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light m-2" asp-controller="User" asp-action="Register">
-                                Create Account
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-controller="User" asp-action="Login">Log In</a>
-                        </li>
+                        @if (userId == null) // if user is not logged in
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light m-2" asp-controller="User" asp-action="Register">
+                                    Create Account
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-controller="User" asp-action="Login">Log In</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light">Welcome Back!</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
