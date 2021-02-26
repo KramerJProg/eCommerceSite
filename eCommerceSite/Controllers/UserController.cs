@@ -43,8 +43,12 @@ namespace eCommerceSite.Controllers
                 // Redirect to Homepage
                 return RedirectToAction("Index", "Home");
             }
-
             return View(reg);
+        }
+
+        public IActionResult Login()
+        {
+            return View();
         }
     }
 }
