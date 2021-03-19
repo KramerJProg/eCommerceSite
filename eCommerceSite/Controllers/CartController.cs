@@ -25,7 +25,7 @@ namespace eCommerceSite.Controllers
         /// </summary>
         /// <param name="id">The id of the product to add</param>
         /// <returns></returns>
-        public async Task<IActionResult> Add(int id) // This is id if the product to add
+        public async Task<IActionResult> Add(int id, string previousUrl) // This is id if the product to add
         {
             Product p = await ProductDb.GetProductAsync(_context, id);
 
@@ -34,7 +34,7 @@ namespace eCommerceSite.Controllers
             TempData["Message"] = p.Title + " added successfully!";
 
             // Redirect back to previous page
-            return RedirectToAction("Index", "Product");
+            return Redirect(previousUrl);
         }
 
         public IActionResult Summary()
